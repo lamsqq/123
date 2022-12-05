@@ -1,7 +1,11 @@
 <?php
-   session_start();
-   include('connect.php');
-   include('function.php');
+    
+    include('connect.php');
+    include('function.php');
+
+    if (!$_SESSION['auth'] = true) {
+        header("Location: auth.php");
+    }
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -45,6 +49,7 @@
                get_all_records();
             ?>
         </div>
+        <a href="out.php">Выход</a>
     </div>
 </body>
 </html>

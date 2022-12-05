@@ -16,10 +16,10 @@
         while($row = mysqli_fetch_assoc($result)) {
             echo "<tr><td>" . $row['id']."</td>
                     <td>" . $row['name']."</td>
-                    <td>" . $row['name_trans']."</td>
+                    <td>" . $row['code']."</td>
                     <td>" . $row['price']."</td>
-                    <td>" . $row['small_text']."</td>
-                    <td>" . $row['big_text']."</td>
+                    <td>" . $row['preview_text']."</td>
+                    <td>" . $row['detail_text']."</td>
                     <td>" . $row['user_id']."</td></tr>";        
         }
         
